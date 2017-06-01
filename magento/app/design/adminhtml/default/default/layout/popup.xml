@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_yourcontroller_youraction>
+        <reference name="content">
+            <block type="testmodule/adminhtml_testscreen"
+                   name='inchoo.restconnect.adminhtml.testscreen' template="testscreen/edit.phtml">
+            </block>
+        </reference>
+        <reference name="head">
+            <action method="addItem">
+                <type>js_css</type>
+                <name>prototype/windows/themes/default.css</name>
+            </action>
+            <action method="addCss">
+                <name>lib/prototype/windows/themes/magento.css</name>
+            </action>
+        </reference>
+    </adminhtml_yourcontroller_youraction>
+</layout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<layout>
+    <module_popup_adminhtml_index>
+        <reference name="content">
+            <block type="module_popup/adminhtml_popup" name="popup" />
+        </reference>
+    </module_popup_adminhtml_index>
+
+    <!--
+        this is for the edit form, same deal as the layout handle above
+    -->
+    <module_popup_adminhtml_edit>
+        <reference name="content">
+            <block type="module_popup/adminhtml_popup_edit" name="popup.edit" />
+        </reference>
+    </module_popup_adminhtml_edit>
+
+</layout>

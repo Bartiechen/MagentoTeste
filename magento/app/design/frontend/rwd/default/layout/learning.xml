@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<layout version = "0.1.0">
+
+    <learning_lear_index_index>
+        <reference name="head">
+            <action method="addJs"><script>fancybox/jquery.fancybox.js</script></action>
+            <action method="addCss"><stylesheet>css/jquery.fancybox.css</stylesheet></action>
+        </reference>
+      <reference name="content">.
+        <block type='learning/list' name='article' template='learning/listagem.phtml'/>
+      </reference>
+    </learning_lear_index_index>
+    <learning_lear_index_create>
+      <reference name="content">
+        <block type='core/template' name='article' template='learning/create.phtml'/>
+      </reference>
+    </learning_lear_index_create>
+    <learning_lear_index_pop>
+        <reference name="head">
+            <block type='core/template' name='article' template='learning/pop.phtml'/>
+        </reference>
+    </learning_lear_index_pop>
+    <adminhtml_adminform_index>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="learning/adminhtml_form_edit" name="adminform"/>
+        </reference>
+    </adminhtml_adminform_index>
+
+</layout>

@@ -1,0 +1,17 @@
+a:5:{i:0;s:94:"Invalid method Mage_Page_Block_Html_Head::(Array
+(
+    [0] => fancybox/jquery-3.2.1.min.js
+)
+)";i:1;s:1574:"#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(348): Varien_Object->__call('', Array)
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#3 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#4 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#5 /var/www/html/magento/app/code/local/Learning/Lear/controllers/IndexController.php(7): Mage_Core_Controller_Varien_Action->loadLayout()
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Learning_Lear_IndexController->indexAction()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('index')
+#8 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#9 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#10 /var/www/html/magento/app/Mage.php(683): Mage_Core_Model_App->run(Array)
+#11 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#12 {main}";s:3:"url";s:17:"/magento/learning";s:11:"script_name";s:18:"/magento/index.php";s:4:"skin";s:7:"default";}

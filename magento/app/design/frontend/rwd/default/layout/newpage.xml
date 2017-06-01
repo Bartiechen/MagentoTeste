@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<layout version ="0.1.0">
+  <yoursite_newpage_index_index>
+    <reference name="content">
+      <block type='newpage/list' name='article' template='newpage/listagem.phtml'/>
+    </reference>
+  </yoursite_newpage_index_index>
+  <yoursite_newpage_index_create>
+    <reference name="content">
+      <block type='newpage/list' name='article' template='newpage/content.phtml'/>
+    </reference>
+  </yoursite_newpage_index_create>
+  <yoursite_newpage_administrador_index>
+    <reference name="content">
+      <block type='newpage/list' name='article' template='newpage/administrador.phtml'/>
+    </reference>
+  </yoursite_newpage_administrador_index>
+</layout>

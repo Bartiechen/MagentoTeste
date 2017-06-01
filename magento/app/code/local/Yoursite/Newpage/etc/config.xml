@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<config>
+  <modules>
+    <Yoursite_Newpage>
+      <version>0.1.0</version>
+    </Yoursite_Newpage>
+  </modules>
+
+<global>
+  <blocks>
+    <newpage>
+      <class>Yoursite_Newpage_Block</class>
+    </newpage>
+  </blocks>
+
+  <helpers>
+    <newpage>
+      <class>Yoursite_Newpage_Helper</class>
+    </newpage>
+  </helpers>
+
+  <models>
+    <yoursite_newpage>
+      <class>Yoursite_Newpage_Model</class>
+      <resourceModel>yoursite_newpage_mysql4</resourceModel>
+    </yoursite_newpage>
+
+    <yoursite_newpage_mysql4>
+      <class>Yoursite_Newpage_Model_Mysql4</class>
+      <entities>
+        <pessoa>
+          <table>pessoa</table>
+        </pessoa>
+      </entities>
+    </yoursite_newpage_mysql4>
+
+  </models>
+
+  <resources>
+    <yoursite_newpage_write>
+      <connection>
+        <use>core_write</use>
+      </connection>
+    </yoursite_newpage_write>
+      <yoursite_newpage_read>
+        <connection>
+          <use>core_read</use>
+        </connection>
+      </yoursite_newpage_read>
+  </resources>
+
+</global>
+
+  <frontend>
+    <routers>
+      <yoursite_newpage>
+        <use>standard</use>
+        <args>
+          <module>Yoursite_Newpage</module>
+          <frontName>newpage</frontName>
+        </args>
+      </yoursite_newpage>
+    </routers>
+
+    <layout>
+      <updates>
+        <newpage>
+          <file>newpage.xml</file>
+        </newpage>
+      </updates>
+    </layout>
+  </frontend>
+</config>

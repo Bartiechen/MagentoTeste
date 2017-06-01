@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <admingridform_adminhtml_index>
+        <reference name="content">
+            <block type="admingridform/adminhtml" name="adminhtml"/>
+        </reference>
+    </admingridform_adminhtml_index>
+
+    <admingridform_adminhtml_edit>
+        <reference name="content">
+            <block type="admingridform/adminhtml_edit" name="adminhtml.edit"/>
+        </reference>
+    </admingridform_adminhtml_edit>
+
+</layout>

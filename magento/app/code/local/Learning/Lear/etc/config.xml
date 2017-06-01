@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<config>
+  <modules>
+    <Learning_Lear>
+      <version>0.1.0</version>
+    </Learning_Lear>
+  </modules>
+
+  <global>
+    <blocks>
+      <learning>
+        <class>Learning_Lear_Block</class>
+      </learning>
+    </blocks>
+
+    <helpers>
+      <learning>
+        <class>Learning_Lear_Helper</class>
+      </learning>
+    </helpers>
+
+    <models>
+      <learning_lear>
+        <class>Learning_Lear_Model</class>
+        <resourceModel>learning_lear_mysql4</resourceModel>
+      </learning_lear>
+
+      <learning_lear_mysql4>
+        <class>Learning_Lear_Model_Mysql4</class>
+        <entities>
+          <contato>
+            <table>learning</table>
+          </contato>
+        </entities>
+      </learning_lear_mysql4>
+    </models>
+
+    <resources>
+      <learning_lear_write>
+        <connection>
+          <use>core_write</use>
+        </connection>
+      </learning_lear_write>
+        <learning_lear_read>
+          <connection>
+            <use>core_read</use>
+          </connection>
+        </learning_lear_read>
+    </resources>
+
+  </global>
+
+  <frontend>
+    <routers>
+      <learning_lear>
+        <use>standard</use>
+        <args>
+          <module>Learning_Lear</module>
+          <frontName>learning</frontName>
+        </args>
+      </learning_lear>
+    </routers>
+
+    <layout>
+      <updates>
+        <learning>
+          <file>learning.xml</file>
+        </learning>
+      </updates>
+    </layout>
+  </frontend>
+
+  <admin>
+      <routers>
+          <learning_lear>
+              <use>admin</use>
+              <args>
+                  <module>Learning_Lear</module>
+                  <frontName>adminlear</frontName>
+              </args>
+          </learning_lear>
+      </routers>
+  </admin>
+
+  <adminhtml>
+    <layout>
+      <updates>
+        <learning_lear>
+          <file>lear_adminform.xml</file>
+        </learning_lear>
+      </updates>
+    </layout>
+  </adminhtml>
+
+</config>

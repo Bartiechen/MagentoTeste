@@ -1,0 +1,45 @@
+<?php
+if(Mage::getSingleton('customer/session')->isLoggedIn()):
+    $name = Mage::getSingleton('customer/session')->getCustomer()->getName();
+endif;
+?>
+<style media="screen">
+    conteudo{
+
+    }
+    table,th,td{
+        margin-top: 1.5em;
+        border: 1px solid black;
+        width: 60%;
+        padding-left: 5px;
+    }
+    th{
+        font-weight: bold;
+    }
+    th,td{
+        width: 50%;
+    }
+</style>
+<div class="box">
+    <div class="box-content">
+        <div class="conteudo">
+            <?php $contatos = $this->getDataLearning() ?>
+
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Envio dos Dados</th>
+                </tr>
+                <?php foreach ($contatos as $contato):?>
+                    <tr>
+                        <td><?php echo $contato->getData('nome'); ?></td>
+                        <td><?php echo $contato->getData('email'); ?></td>
+                        <td><?php echo $contato->getData('data_envio') ;?></td>
+                    </tr>
+                <?php endforeach;?>
+            </table>
+        </div>
+    </div>
+</div>
+

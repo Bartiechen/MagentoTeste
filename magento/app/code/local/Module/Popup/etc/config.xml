@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Examples
+ *
+ * PHP Version 5
+ *
+ * @category  Examples
+ * @package   Examples_AdminGridAndForm
+ * @author    Mike Whitby <me@mikewhitby.co.uk>
+ * @copyright Copyright (c) 2012 Mike Whitby (http://www.mikewhitby.co.uk)
+ * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @link      N/A
+ */
+-->
+<config>
+    <modules>
+        <Module_Popup>
+            <version>0.1.0</version>
+        </Module_Popup>
+    </modules>
+    <global>
+        <blocks>
+            <module_popup>
+                <class>Module_Popup_Block</class>
+            </module_popup>
+        </blocks>
+        <helpers>
+            <module_popup>
+                <class>Module_Popup_Helper</class>
+            </module_popup>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Module_Popup before="Mage_Adminhtml">Module_Popup_Adminhtml</Module_Popup>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <module_popup>
+                    <file>modulepopup/popup.xml</file>
+                </module_popup>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

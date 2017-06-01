@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Magento_PrimeiroController>
+      <version>1.0.0</version>
+    </Magento_PrimeiroController>
+  </modules>
+
+  <frontend>
+    <routers><!--Rotas do frontend-->
+
+      <magento_primeirocontroller>
+
+        <use>standard</use><!--Sempre para o frontend-->
+        <args>
+          <module>Magento_PrimeiroController</module><!-- Ponto de entrada -->
+          <frontName>primeirocontroller</frontName>
+        </args>
+
+      </magento_primeirocontroller>
+
+    </routers>
+    <layout>
+      <updates>
+        <newpage>
+          <file>newpage.xml</file>
+        </newpage>
+      </updates>
+  </frontend>
+</config>
